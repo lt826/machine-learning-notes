@@ -99,6 +99,6 @@ def iris_knn():
 
 if __name__ == '__main__':
     #load_iris_data()
-    #plot_iris_data()
+    plot_iris_data()
     #split_train_test_data()
-    iris_knn()
+    #iris_knn()
