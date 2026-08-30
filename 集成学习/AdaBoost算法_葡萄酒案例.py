@@ -16,7 +16,6 @@ AdaBoost算法
 """
 
 import pandas as pd
-from sklearn.preprocessing import LabelEncoder          #标签编码器
 from sklearn.model_selection import train_test_split    #训练集，测试集分割
 from sklearn.tree import DecisionTreeClassifier         #决策树
 from sklearn.ensemble import AdaBoostClassifier         #AdaBoost分类器

@@ -13,13 +13,10 @@
             y = w1x1 + w2x2 + ... + wnxn + b
               = w的转置 * x + b
 """
-import sklearn.metrics
 from sklearn.preprocessing import StandardScaler        #数据预处理
 from sklearn.linear_model import LinearRegression       #正规方程的线性回归
 from sklearn.model_selection import train_test_split    #数据集划分
 from sklearn.metrics import mean_squared_error, mean_absolute_error, root_mean_squared_error          #均方误差
-from sklearn.linear_model import Ridge,RidgeCV
-
 import pandas as pd
 import numpy as np
 

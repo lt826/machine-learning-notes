@@ -14,7 +14,6 @@
 
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 import jieba                                                # 分词器
 import scipy.special.cython_special
 from sklearn.metrics import accuracy_score

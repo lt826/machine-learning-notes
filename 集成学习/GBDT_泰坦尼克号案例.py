@@ -14,7 +14,6 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier                 #决策树
 from sklearn.ensemble import GradientBoostingClassifier         #梯度提升树
-from sklearn.metrics import classification_report               #模型评估
 from sklearn.model_selection import GridSearchCV                #网格搜索
 from sklearn.metrics import accuracy_score                      #模型评估指标，计算模型预测的准确率
 

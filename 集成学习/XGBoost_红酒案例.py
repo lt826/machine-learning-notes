@@ -17,15 +17,12 @@ XGBoost(极限梯度提升树，EXtreme Gradient Boosting Tree)
 """
 
 import joblib                                           #保存和加载模型
-import numpy as np
 import pandas as pd
 import xgboost as xgb                                   #极限梯度提升树对象
 from collections import Counter                         #统计数据
 from sklearn.model_selection import train_test_split    #训练集和测试集分割
 from sklearn.metrics import accuracy_score              #准确率
-from sklearn.metrics import classification_report       #分类报告
 from sklearn.model_selection import StratifiedKFold     #分层K折交叉验证
-from sklearn.utils import class_weight                  #计算样本权重
 from sklearn.model_selection import GridSearchCV        #网格搜索
 
 #定义函数，对红酒数据进行分割，并存储到csv文件中

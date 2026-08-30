@@ -29,8 +29,6 @@ from sklearn.preprocessing import StandardScaler        #数据预处理
 from sklearn.linear_model import SGDRegressor           #梯度下降的线性回归
 from sklearn.metrics import mean_squared_error, mean_absolute_error, root_mean_squared_error          #均方误差
 from sklearn.linear_model import Lasso,Ridge            #L1正则化，L2正则化
-
-import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -224,6 +222,6 @@ def demo_l2_regularization():
 if __name__ == '__main__':
     #demo_under_fitting()
     #demo_just_fitting()
-    demo_over_fitting()
+    #demo_over_fitting()
     demo_l1_regularization()
     demo_l2_regularization()

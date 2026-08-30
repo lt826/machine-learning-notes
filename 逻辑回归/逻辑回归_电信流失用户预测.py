@@ -4,7 +4,6 @@
 """
 
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.model_selection import train_test_split
@@ -60,7 +59,7 @@ def demo03_model_train_predict_evaluate():
 
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=20)
 
-    estimator = LogisticRegression()
+    estimator = LogisticRegression()        #逻辑回归模型
     estimator.fit(x_train, y_train)
     y_predict = estimator.predict(x_test)
     print(f'预测值为:{y_predict}')

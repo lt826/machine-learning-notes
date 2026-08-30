@@ -6,7 +6,6 @@ CART分类回归决策树，既可以做分类也可以做回归，一般做分�
 """
 
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.tree import DecisionTreeRegressor      #分类决策树
 from sklearn.linear_model import LinearRegression

@@ -53,13 +53,14 @@ param_dict = {"n_neighbors": [i for i in range(1,11)]}
 #4.3创建GridSearchCV对象
 #参数1：要计算的模型对象，参数2：超参可能出现的值，参数3：折数，每个超参组合都会进行5折交叉验证，  这里是10*5=50次
 estimator = GridSearchCV(estimator, param_grid=param_dict, cv=5)
+#
 #4.4训练模型
 estimator.fit(x_train, y_train)
 #4.5打印最优超参数组合
-print(f"最优评分：{estimator.best_score_}")          #
+print(f"最优评分：{estimator.best_score_}")
 print(f"最优超参数组合：{estimator.best_params_}")    #'n_neighbors': 3
 print(f"最佳估计器：{estimator.best_estimator_}")    #KNeighborsClassifier(n_neighbors=3)
-
+#estimator已经变成最好的模型了，即estimator = estimator.best_estimator_
 #5.模型评估
 #5.1获取最优超参的模型对象
 best_estimator = estimator.best_estimator_        #等于KNeighborsClassifier(n_neighbors=3)
